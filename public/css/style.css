@@ -1,0 +1,328 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin:0;
+  padding: 0;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.carousel-caption {
+	bottom: 200px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 75%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-toggler {
+	background: #fff;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: #fff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color:black;
+}
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  /* sticky or fixed are fine */
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to bottom, #0003 70%,#0000); /* background when scroll is in the top */
+  transition: background .5s; /* control how smooth the background changes */
+}
+
+nav.scrolled {
+  background:#6a097d;
+}
+
+#content{
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px,auto);
+  /* grid-gap: 10px; */
+}
+#content div{
+    /* background: #3bbced; */
+    padding:10px;
+    text-align: center;
+}
+.header{
+  grid-column: 1/7;
+  margin: 0;
+  padding: 0;
+}
+.header h1{
+  margin-top: 2.5rem;
+  font-weight: bolder;
+  color: #6a097d;
+}
+.header .hr1{
+   border: 1px solid #6a097d;
+   width: 230px;
+   background-color:#6a097d;
+   opacity: 0.4;
+}
+.header .hr2{
+  border: 1px solid #6a097d;
+  width: 40px;
+  padding: 6.2px;
+  position: relative;
+  bottom: 24px;
+  background-color:#6a097d;
+}
+.img-section{
+  grid-column: 1/4;
+  grid-row: 2/8;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.img-section .image1{
+  top: 70px;
+  right: 160px;
+  position: absolute;
+  width: 25.25rem;
+  height: 25.25rem;
+}
+.img-section .image2{
+  position: absolute;
+  bottom: 100px;
+  left: 113px;
+  width: 9.25rem;
+  height: 9.25rem;
+}
+.img-section .image3{
+  position: absolute;
+  top: -10px;
+  right: 85px;
+  width: 9.25rem;
+  height: 9.25rem;
+}
+.text{
+  grid-column: 4/7;
+  grid-row: 2/7;
+  position: relative;
+  color: #a93199;
+}
+.text .text-title{
+  position: absolute;
+  text-align: left;
+  top: -10px;
+  left: -40px;
+}
+.text .text-para{
+  position: absolute;
+  text-align: left;
+  left: -35px;
+  font-size: 20px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+.myButton {
+	background-color:#6a097d;
+	border-radius:6px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:12px 28px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+  position: relative;
+  text-align: left;
+  top: 365px;
+  right: 345px;
+}
+.myButton:hover {
+	background-color:#0688fa;
+  text-decoration: none;
+  color: white
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.one{
+  grid-column: 1/7;
+  background-color: #fdecff;
+}
+.main{
+  grid-column: 1/7;
+  grid-row: 2/6;
+  background-color: #fdecff;
+}
+.one-para{
+  position: relative;
+  left: 290px;
+  text-align: left;
+  width: 62%;
+}
+.one h1{
+  margin-top: 2.5rem;
+  font-weight: bolder;
+  color: #6a097d;
+}
+.one .hr1{
+   border: 1px solid #6a097d;
+   width: 230px;
+   background-color:#6a097d;
+   opacity: 0.4;
+}
+.one .hr2{
+  border: 1px solid #6a097d;
+  width: 40px;
+  padding: 6.2px;
+  position: relative;
+  bottom: 24px;
+  background-color:#6a097d;
+}
+.container h1{
+  text-transform: uppercase;
+  text-align: center;
+}
+.container1{
+  display: flex;
+  justify-content: space-around;
+}
+.card{
+  position: relative;
+  top: 20px;
+  /* left:-2000px; */
+  display: grid;
+  grid-template-columns: 240px;
+  grid-template-rows: 20px 220px;
+  grid-area:"image" "text";
+  text-align: left;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+  width: 75%;
+  margin-right:50px;
+}
+
+/* .card-text{
+  margin-right: 20px;
+} */
+.card-text p{
+  opacity: 0.5;
+  font-size: 15px;
+  font-style: italic;
+  font-family: cursive;
+  margin-right: 20px;
+  padding: 0;
+  text-align: left;
+}
+.card-text h2,h3{
+  opacity: 0.8;
+  color: #6a097d;
+  padding: 0;
+  text-align: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #45046a;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}

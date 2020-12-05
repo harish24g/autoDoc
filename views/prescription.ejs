@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/css/style2.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=yzhDd4yfvUWSdNbvAyWbF8YMW4vNmYSyhuApx5Jhojyqh1SIphODqPsz2_v2JhNOPKLsXFPxWYRgz6iUscm6Ef4hQkJmfGJqPKBmNl89neHEnE9hKEuaEzBC0HChyPII7K4RIe8FMSC0HEr89XN5GQSjS6Rmn4JTIFWhTKUzfVu1a48Fnl2pOAUHSdq5wOyAYC7XcK92x5QGd1jIxTq7MH9jwaPBzyzmcaIeFXZPrHkaFApZsFFA2ZEbuIsE54L6UxAKoffqYzlS7-q247omcOjNlVDpR8OhyZjvpZI5FzwiJgF6Ojv-7v3TdvE0KMsR7IZy794uN9K-MoYk6dzdLbUpsaH-bo-JLX3AKAbxYB3FT7i5qMtTlIgUBtn15lflPcrUGlDHZAh-Z9nS4o68d7jbKkZxDWzZG_7VPK12Z9KvUI8Ou2uA6iRXlDuHq7Dy8uD1rJ_CzJhukGUcmb2Xjg" charset="UTF-8"></script></head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-text">
+
+        <form name="f1" action="/autodoc/Docdash" method="POST">
+          <center>
+            <h1> PRESCRIPTION FORM </h1>
+            <table class="doctorform">
+              <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" id="name" onBlur="check()"></td>
+                <td>
+                  <p id="xyz"></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Sex</td>
+                <td><input TYPE="RADIO"  VALUE="Male">MALE</td>
+                <td><input TYPE="RADIO"  VALUE="FEMALE">FEMALE</td>
+              </tr>
+              <tr>
+                <td>Email-ID</td>
+                <td><input type="text" name="email" id="mailid" onBlur="email()"></td>
+                <td>
+                  <p id="def"></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Age</td>
+                <td>
+                  <input type="text" id="age"  onBlur="age"></td>
+                <td>
+                  <p id="efg"></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Medicines</td>
+                <td><textarea id="add" name="med" rows="4" cols="50"></textarea></td>
+                <td>
+                  <p id="efg"></p>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+              <tr>
+                <td></td>
+                <td><input type="Submit" id="submit" onClick="showit()"></td>
+                <td>
+                  <p id="ijk"></p>
+                </td>
+              </tr>
+            </table>
+
+          </center>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var navbar = document.querySelector('nav')
+
+    window.onscroll = function() {
+
+      // pageYOffset or scrollY
+      if (window.pageYOffset > 0) {
+        navbar.classList.add('scrolled')
+      } else {
+        navbar.classList.remove('scrolled')
+      }
+    }
+  </script>
+</body>
+
+</html>

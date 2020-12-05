@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../pres2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: #fdecff; */
+}
+
+
+.card {
+  position: relative;
+  top: 50px;
+  left: 450px;
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 210px 210px 80px;
+  grid-area: "image""text";
+  text-align: center;
+  background: black;
+  border-radius: 20px;
+  /* border: solid 2px  #f54291; */
+  /* box-shadow: 5px 5px 5px  #f54291; */
+  width: 40%;
+  opacity: 0.5;
+}
+
+.card-text {
+  margin: 20px;
+  color: white;
+}
+
+.card-text p {
+  opacity: 0.4;
+  font-size: 15px;
+  font-style: italic;
+  font-family: cursive;
+  color: pink;
+}
+
+.card {
+  margin: 15px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.doctorform td {
+  color: white;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+tr, td {
+  padding: 10px;
+}
+
+input{
+  font-size: 20px;
+}
+input,textarea{
+  border-radius: 2px;
+  border: none;
+}
+#submit {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  border-radius: 20px;
+  width: 35%;
+  padding: 10px;
+}
+
+#submit:hover {
+  color: #f54291;
+}
