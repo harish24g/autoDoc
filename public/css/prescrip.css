@@ -1,53 +1,280 @@
 body{
-    background-color: #7918f2;
-
+  margin: 0;
+  padding: 0;
+  background-color: #fceef5;
+}
+.carousel-item {
+  height: 85vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-caption {
+  bottom: 200px;
+}
+.carousel-caption h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* margin-top: 50px; */
+  opacity: 0.7;
+}
+.carousel-caption p {
+  width: 75%;
+  margin: auto;
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 1.9;
+}
+.navbar-light .navbar-brand {
+color: #fff;
+font-size: 25px;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 3px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+color: #fff;
+}
+.navbar-toggler {
+background: #fff;
+}
+.navbar-nav {
+text-align: center;
+}
+.nav-link {
+padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+color: #fff;
+}
+.navbar-toggler {
+padding: 1px 5px;
+font-size: 18px;
+line-height: 0.3;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+color:black;
+}
+nav {
+position: -webkit-sticky;
+position: sticky;
+/* sticky or fixed are fine */
+position: fixed;
+top: 0;
+height: 50px;
+width: 100%;
+background: linear-gradient(to bottom,  #0003 70%,#0000); /* background when scroll is in the top */
+transition: background .5s; /* control how smooth the background changes */
 }
 
-.prescription {
-
-
+nav.scrolled {
+background:#6a097d;
 }
-#myform {
-    
-    border-radius: 16px;
-    overflow: hidden;
-    background: #7918f2;
-    background: -webkit-linear-gradient(-68deg, #ac32e4 , #4801ff);
-    background: -o-linear-gradient(-68deg, #ac32e4 , #4801ff);
-    background: -moz-linear-gradient(-68deg, #ac32e4 , #4801ff);
-    background: linear-gradient(-68deg, #ac32e4 , #4801ff);
+
+#content{
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px,auto);
+  grid-gap: 10px;
+}
+#content div{
+    /* background: #3bbced; */
+    padding:10px;
+    text-align: center;
+}
+.header{
+  grid-column: 1/7;
+  margin: 0;
+  padding: 0;
+}
+.header .doc-title{
+  margin-top: 2.5rem;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #6a097d;
+}
+.header .doc-title1{
+  font-weight: bolder;
+  color: #6a097d;
+}
+.header .hr1{
+   border: 1px solid #6a097d;
+   width: 230px;
+   background-color:#6a097d;
+   opacity: 0.4;
+}
+.header .hr2{
+  border: 1px solid #6a097d;
+  width: 40px;
+  padding: 6.2px;
+  position: relative;
+  bottom: 22px;
+  background-color:#6a097d;
+}
+.three{
+  grid-column: 1/4;
+  grid-row: 2/9;
+}
+.card {
+  position: relative;
+  top: 20px;
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 210px 210px 150px;
+  grid-area: "image""text";
+  text-align: center;
+  background: rgba(106, 9, 125, 0.9);
+  border-radius: 20px;
+  width: 95%;
+  opacity: 0.6;
+}
+
+.card-text {
+  margin: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.card-text p {
+  opacity: 0.4;
+  font-size: 15px;
+  font-style: italic;
+  font-family: cursive;
+  color: rgba(255, 255, 255, 1);
+}
+
+.card {
+  margin: 15px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.doctorform td {
+  color: white;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+tr, td {
+  padding: 10px;
+}
+
+input{
+  font-size: 20px;
+}
+input,textarea{
+  border-radius: 2px;
+  border: none;
+}
+.four{
+  grid-column: 4/7;
+  grid-row: 2/9;
+  position: relative;
+}
+.pannels{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pannels li{
+  width:100%;
+  margin:0px;
+}
+.app{
+  position: absolute;
+  right:250px;
+  border-radius: 20px;
+  border-color: black;
+  box-shadow: 25px 25px 25px rgba(0,0,0,0.4);
+  height: 550px;
+  animation: slide1 1.5s  2s ease-in forwards;
+}
+.app1{
+  right:250px;
+  position: absolute;
+  border-radius: 20px;
+  border-color: black;
+  height: 550px;
+  box-shadow: 25px 25px 25px rgba(0,0,0,0.4);
+  animation: slide2 1.5s 2s ease-in forwards;
+}
+.app2{
+  position: absolute;
+  right:250px;
+  border-radius: 20px;
+  border-color: black;
+  height: 550px;
+  box-shadow: 25px 25px 25px rgba(0,0,0,0.4);
+}
+
+@keyframes slide1 {
+  from{
+    transform: translateX(0px) rotate(0deg);
   }
-  
-  #datatable, table {
-    background-color: transparent;
+  to{
+    transform: translateX(-190px) rotate(-10deg) scaleY(0.9);
+    margin-top:20px;
   }
-  
-  #datatable, td {
-    font-family: Montserrat-Regular;
-    font-size: 14px;
-    color: #fff;
-    line-height: 1.4;
+}
+@keyframes slide2 {
+  from{
+    transform: translateX(0px) rotate(0deg) ;
   }
-  
-  #datatable, td {
-    font-family: Montserrat-Medium;
-    font-size: 12px;
-    color: #fff;
-    line-height: 1.4;
-    text-transform: uppercase;
-  
-    background-color: rgba(255,255,255,0.32);
+  to{
+    transform: translateX(190px) rotate(10deg) scaleY(0.9);
+    margin-top: 20px;
   }
-  
-  #datatable, .row100:hover td {
-    background-color: rgba(255,255,255,0.1);
-  }
-  
-  #datatable, .hov-column-ver6 {
-    background-color: rgba(255,255,255,0.1);
-  }
-  
-  
-  .table100.ver6 .row100 td:hover {
-    background-color: rgba(255,255,255,0.2);
-  }
+}
+
+#submit {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  border-radius: 20px;
+  width: 35%;
+  padding: 10px;
+}
+
+#submit:hover {
+  color: #f54291;
+}
+
+.myButton {
+box-shadow:inset 0px 1px 0px 0px #e184f3;
+background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+background-color:#c123de;
+border-radius:36px;
+border:3px solid #a511c0;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:15px;
+font-weight:bold;
+padding:12px 30px;
+text-decoration:none;
+text-shadow:0px 1px 0px #9b14b3;
+/* margin-left: 13.75rem; */
+margin-bottom: 10px;
+}
+.myButton:hover {
+background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+background-color:#a20dbd;
+text-decoration: none;
+}
+.myButton:active {
+position:relative;
+top:1px;
+}
