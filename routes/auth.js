@@ -72,6 +72,10 @@ router.post('/register', async (req,res) =>{
     {
         res.redirect(`/autodoc/patientdash/${user.email}`);
     }
+    if(user.role === "Middleman")
+    {
+        res.redirect(`/autodoc/middlemen/${user.name}`);
+    }
  });
 //  //DocDash
 //  router.post('/Docdash', async (req,res) =>{

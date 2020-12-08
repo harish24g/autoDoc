@@ -54,29 +54,23 @@
     </div>
     <!-- end-carousel -->
     
-    <h1 class="title1">Patient Name:<%= pres[1].name %></h1>
-    <h1 class="title1">Presciption Details:</h1>
+    <h1 class="title1"></h1>
+    <h1 class="title1"><%=location %> AutoDoc Community</h1>
     <div class="container">
       <!-- <h1 class="mb-4 mt-4">Presciptions</h1> -->
       <!-- <a href="/articles/new" class="btn btn-success">New Article</a> -->
-      <% pres.forEach(article => { %>
+      <% ord.forEach(article => { %>
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title" name="email"><h4>Your Prescription</h4>
+          <h4 class="card-title" name="email"><h4><%= article.name %></h4>
           <div class="card-subtitle text-muted mb-2">
-            <%= article.date.toLocaleDateString() %>
+            <%= article.dateoforder.toLocaleDateString() %>
+            <%= article.email %>
           </div>
           <div class="card-text mb-2" name="med"><%= article.med %></div>
-          <div class="location">
-            <label for="location">Choose Your Location:</label>
-            <select name="location" id="location">
-              <option value=" ">Location</option>
-              <option value="tambaram">Tambaram</option>
-              <option value="Ecr">Ecr</option>
-              <option value="Omr">Omr</option>
-            </select>
+     
             
-          </div>
+          
           
 
           <!-- <button type="submit" class="btn btn-primary">Order</button> -->

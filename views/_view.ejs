@@ -1,0 +1,23 @@
+<div class="form-group">
+    <label for="title">Your email</label>
+    <input required value="<%= pres.email %>" type="text" name="email" id="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="title">Your name</label>
+    <input required value="<%= pres.name %>" type="text" name="name" id="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="description">Medicines</label>
+    <textarea name="med" id="description" class="form-control"><%= pres.med %></textarea>
+  </div>
+  <div class="form-group">
+    <select name="location" id="location">
+        <option value=" ">Location</option>
+        <option value="Tambaram">Tambaram</option>
+        <option value="Ecr">Ecr</option>
+        <option value="Omr">Omr</option>
+      </select>
+  </div>
+  
+  <a href="/" class="btn btn-secondary">Cancel</a>
+  <button type="submit" class="btn btn-primary">Confirm Order</button>
